@@ -7,8 +7,8 @@ class CandyCount {
 
         if (money > 0 && price > 0){
             while((money - price) >=0) {
-                candies = candies + 1;
-                money = money - price;
+                candies++;
+                money -= price;
             }
         }
 
