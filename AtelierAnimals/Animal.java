@@ -7,7 +7,11 @@ public class Animal{
     private boolean carnivorous = false;
     
     public String introduce() {
-        return "Hey, en tant que " + this.name + ", j'ai " + this.legs + " pattes et je " + (this.carnivorous ? "suis" : "ne suis pas") + " carnivore.";
+        return "Hey, en tant que "
+        + this.name + ", j'ai "
+        + this.legs + " pattes et je "
+        + (this.carnivorous ? "suis" : "ne suis pas")
+        + " carnivore.";
     }
 
     public boolean isDangerous() {
