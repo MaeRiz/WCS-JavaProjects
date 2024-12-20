@@ -6,13 +6,7 @@ public class Animal{
     private int size; 
     private boolean carnivorous = false;
     
-    public String introduce() {
-        return "Hey, en tant que "
-        + this.name + ", j'ai "
-        + this.legs + " pattes et je "
-        + (this.carnivorous ? "suis" : "ne suis pas")
-        + " carnivore.";
-    }
+    public abstract String introduce();
 
     public boolean isDangerous() {
         return this.size >= this.MAX_SIZE;
